@@ -14,7 +14,7 @@ This repository contains scripts for fecal microbiome taxa and function analyses
 ## Description of Scripts
 Scripts in each set are intended to be run separately.
 1. **Data Cleaning**. This script merges ASA24 Recall Data, Food Frequency Questionnaire Data, as well as Lactase Persistent Genotype Data, modifies variable names, and saves the data frame for differential abundance analyses and ANCOVA analyses.
-* cleaning_input_data.R
+   * cleaning_input_data.R
 
 3. **Taxa**.
 * fig2_taxa.R
