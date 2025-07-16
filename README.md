@@ -16,14 +16,14 @@ Scripts in each set are intended to be run separately.
 1. **Data Cleaning**. This script merges ASA24 Recall Data, Food Frequency Questionnaire Data, as well as Lactase Persistent Genotype Data, modifies variable names, and saves the data frame for differential abundance analyses and ANCOVA analyses.
    * cleaning_input_data.R
 
-3. **Taxa**.
+3. **Taxa**. These scripts produce the figures for the microbial taxa abundance after Deseq2 analysis.
    * fig2_taxa.R
    * fig3_taxa.R
 
-5. **Gene**.
+5. **Gene**. This script includes analyses of microbial beta-galactosidase gene abundance with host lactase genotype and produces Figure 4. 
    * fig4_lactose_gene.R
 
-7. **Short-Chain Fatty Acids**.
+7. **Short-Chain Fatty Acids**. The section includes scripts for the analyses of fecal SCFA levels and host lactase genotype, with or without lactose/dairy intake data.
    * fig5_fecal_SCFA.R
    * fig6_fecal_SCFA.R
    * fig7_fecal_SCFA.R
