@@ -17,18 +17,18 @@ Scripts in each set are intended to be run separately.
    * cleaning_input_data.R
 
 3. **Taxa**.
-* fig2_taxa.R
-* fig3_taxa.R
+   * fig2_taxa.R
+   * fig3_taxa.R
 
 5. **Gene**.
-* fig4_lactose_gene.R
+   * fig4_lactose_gene.R
 
 7. **Short-Chain Fatty Acids**.
-* fig5_fecal_SCFA.R
-* fig6_fecal_SCFA.R
-* fig7_fecal_SCFA.R
-* fig8_fecal_SCFA.R
-* figS3_fecal_SCFA.R
-* figS4_fecal_SCFA.R
+   * fig5_fecal_SCFA.R
+   * fig6_fecal_SCFA.R
+   * fig7_fecal_SCFA.R
+   * fig8_fecal_SCFA.R
+   * figS3_fecal_SCFA.R
+   * figS4_fecal_SCFA.R
 
 ## Metagenomic analysis pipeline script
