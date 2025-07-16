@@ -30,5 +30,3 @@ Scripts in each set are intended to be run separately.
    * fig8_fecal_SCFA.R
    * figS3_fecal_SCFA.R
    * figS4_fecal_SCFA.R
-
-## Metagenomic analysis pipeline script
