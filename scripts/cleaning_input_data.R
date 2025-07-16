@@ -4,9 +4,15 @@
 # Purpose: 
 #
 # Author: Yirui Tang
-# Date: 20250714
+# Date: 20250716
 #
-# Inputs:
+# Inputs:  03_ffq_lactose_dtotal_lct_fscfa.csv
+#          04_ffq_dairyproduct_lct_fscfa.csv
+#          02_asa24_lactose_dtotal_no_powders_lct.csv
+#          03_asa24_dairyproduct_lct_fscfa.csv
+#          SCFA_ratio_Andrew.csv
+#          FL100_ASA24_avgs_cleaned_all_dt.csv
+#          FL100_FFQ_cleaned_all_dt.csv
 #
 # Outputs: df.csv
 #          df_CH.csv
@@ -18,14 +24,14 @@ library(tidyr)
 library(dplyr)
 
 ## Read dietary input file and fscfa variables.
-ffq<- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/outputs/out_ffq/03_ffq_lactose_dtotal_lct_fscfa.csv", header=T) # 393 subjects
-ffq_dairy <- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/outputs/out_ffq/04_ffq_dairyproduct_lct_fscfa.csv", header=T) # 393 subjects
-asa<- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/outputs/out_asa24/02_asa24_lactose_dtotal_no_powders_lct.csv", header=T) # 393 subjects
-asa_dairy <- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/outputs/out_asa24/03_asa24_dairyproduct_lct_fscfa.csv", header=T) # 393 subjects
-f_ratio <- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/SCFA_data/SCFA_ratio_Andrew.csv", header = TRUE) # 363 subjects
+ffq<- read.csv("CDRF_metagenome/data/03_ffq_lactose_dtotal_lct_fscfa.csv", header=T) # 393 subjects
+ffq_dairy <- read.csv("CDRF_metagenome/data/04_ffq_dairyproduct_lct_fscfa.csv", header=T) # 393 subjects
+asa<- read.csv("CDRF_metagenome/data/02_asa24_lactose_dtotal_no_powders_lct.csv", header=T) # 393 subjects
+asa_dairy <- read.csv("CDRF_metagenome/data/03_asa24_dairyproduct_lct_fscfa.csv", header=T) # 393 subjects
+f_ratio <- read.csv("CDRF_metagenome/data/SCFA_ratio_Andrew.csv", header = TRUE) # 363 subjects
 # fiber intake as covariate
-asa_clean<- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/input/FL100_ASA24_avgs_cleaned_all_dt.csv", header = TRUE) # 350 x 145
-ffq_clean <- read.csv("/Users/tangyirui/Desktop/Desktop_vicky_MacBook_Pro/1junior_spe/fecal_SCFA/data/input/FL100_FFQ_cleaned_all_dt.csv", header = TRUE)
+asa_clean<- read.csv("CDRF_metagenome/data/FL100_ASA24_avgs_cleaned_all_dt.csv", header = TRUE) # 350 x 145
+ffq_clean <- read.csv("CDRF_metagenome/data/FL100_FFQ_cleaned_all_dt.csv", header = TRUE)
 
 ## Edit dietary variable names
 # ffq
